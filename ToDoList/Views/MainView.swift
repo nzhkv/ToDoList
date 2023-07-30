@@ -9,11 +9,8 @@ import SwiftUI
 
 struct MaimView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, Nikolay!")
+        NavigationView {
+            LoginView()
         }
         .padding()
     }

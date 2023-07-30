@@ -30,6 +30,7 @@
 		2EE7A7982A767D8B00F2106B /* LoginViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE7A7972A767D8B00F2106B /* LoginViewViewModel.swift */; };
 		2EE7A79A2A767D9700F2106B /* RegisterViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE7A7992A767D9700F2106B /* RegisterViewViewModel.swift */; };
 		2EE7A79C2A767DAB00F2106B /* ToDoListItemViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE7A79B2A767DAB00F2106B /* ToDoListItemViewViewModel.swift */; };
+		2EE7A79E2A7684FF00F2106B /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE7A79D2A7684FF00F2106B /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		2EE7A7972A767D8B00F2106B /* LoginViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewViewModel.swift; sourceTree = "<group>"; };
 		2EE7A7992A767D9700F2106B /* RegisterViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewViewModel.swift; sourceTree = "<group>"; };
 		2EE7A79B2A767DAB00F2106B /* ToDoListItemViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListItemViewViewModel.swift; sourceTree = "<group>"; };
+		2EE7A79D2A7684FF00F2106B /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				2EE7A7812A767B2200F2106B /* ToDoListView.swift */,
 				2EE7A7832A767B4800F2106B /* NewItemView.swift */,
 				2EE7A7852A767B6C00F2106B /* LoginView.swift */,
+				2EE7A79D2A7684FF00F2106B /* HeaderView.swift */,
 				2EE7A7872A767B9100F2106B /* RegisterView.swift */,
 				2EE7A7892A767BCE00F2106B /* ToDoListItemView.swift */,
 			);
@@ -233,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EE7A7862A767B6C00F2106B /* LoginView.swift in Sources */,
+				2EE7A79E2A7684FF00F2106B /* HeaderView.swift in Sources */,
 				2EE7A7672A73D38E00F2106B /* MainView.swift in Sources */,
 				2EE7A79A2A767D9700F2106B /* RegisterViewViewModel.swift in Sources */,
 				2EE7A7902A767D4100F2106B /* MainViewViewModel.swift in Sources */,
