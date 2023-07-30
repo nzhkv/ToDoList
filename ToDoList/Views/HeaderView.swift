@@ -32,12 +32,6 @@ struct HeaderView: View {
             .frame(width: UIScreen.main.bounds.width * 3,
                    height: 300)
             .offset(y: -100)
-            
-            // Login form
-            
-            // Create Account
-            
-            Spacer()
         }
     }
 }
