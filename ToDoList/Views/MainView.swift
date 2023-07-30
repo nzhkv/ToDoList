@@ -12,7 +12,8 @@ struct MaimView: View {
         NavigationView {
             LoginView()
         }
-        .padding()
+//        .padding()
+       
     }
 }
 
