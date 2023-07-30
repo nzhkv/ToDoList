@@ -8,12 +8,31 @@
 import SwiftUI
 
 struct RegisterView: View {
+    @State var name = ""
+    @State var email = ""
+    @State var password = ""
+    
     var body: some View {
         VStack {
             HeaderView(title: "Register",
                        subtitle: "Start organizing todos",
                        angle: -15,
                        backgroundColor: .orange)
+            
+            Form {
+                TextField("Full Name", text: $name)
+                    .textFieldStyle(DefaultTextFieldStyle())
+                TextField("Email adress", text: $email)
+                    .textFieldStyle(DefaultTextFieldStyle())
+                SecureField("Password", text: $password)
+                    .textFieldStyle(DefaultTextFieldStyle())
+                
+                TLButton(title: "Create account", background: .green) {
+                    //action
+                }
+                .padding()
+            }
+            .offset(y: -50)
             
             Spacer()
         }
