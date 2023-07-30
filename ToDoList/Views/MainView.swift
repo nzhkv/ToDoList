@@ -9,11 +9,7 @@ import SwiftUI
 
 struct MaimView: View {
     var body: some View {
-        NavigationView {
-            LoginView()
-        }
-//        .padding()
-       
+        LoginView()
     }
 }
 
