@@ -1,11 +1,11 @@
 # ToDoList (SwiftUI)
 
-• SwiftUI
-• Authentication and Firebase Database
-• Application Architecture Development
-• 5 Screens
-• Functionality: Authentication, Registration, View Tasks, Create Tasks, Profile, and Log Out
-MVVC Architecture
+• SwiftUI<br>
+• Authentication and Firebase Database<br>
+• Application Architecture Development<br>
+• 5 Screens<br>
+• Functionality: Authentication, Registration, View Tasks, Create Tasks, Profile, and Log Out<br>
+MVVC Architecture<br>
 
 ![Image alt](https://github.com/nzhkv/ToDoList/blob/main/1.png)
 ![Image alt](https://github.com/nzhkv/ToDoList/blob/main/1a.png)
