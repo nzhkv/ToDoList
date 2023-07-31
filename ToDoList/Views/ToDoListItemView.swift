@@ -41,7 +41,7 @@ struct ToDoListItemView_Previews: PreviewProvider {
             title: "Buy milk",
             dueDate: Date().timeIntervalSince1970,
             createDAte: Date().timeIntervalSince1970,
-            isDone: true
+            isDone: false
         ))
     }
 }
