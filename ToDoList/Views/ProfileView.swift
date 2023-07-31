@@ -23,40 +23,51 @@ struct ProfileView: View {
                 
                 // info
                 VStack(alignment: .leading) {
-                    HStack {
-                        Text("Name: ")
-                            .bold()
-                        Text("Nikolay Zhukov")
+                    if let user = viewModel.user {
+                        profile(user: user)
+                    } else {
+                        Text("Loadinf profile ...")
                     }
+                    
+                    // sign out
+                    Button("Log Out") {
+                        viewModel.logOut()
+                    }
+                    .tint(.red)
                     .padding()
                     
-                    HStack {
-                        Text("Email: ")
-                            .bold()
-                        Text("Nikolay Zhukov")
+                    Spacer()
                     }
-                    .padding()
-                    
-                    HStack {
-                        Text("Member since: ")
-                            .bold()
-                        Text("Nikolay Zhukov")
-                    }
-                    .padding()
-                }
-                .padding()
-                
-                // sign out
-                Button("Log Out") {
-                    viewModel.logOut()
-                }
-                .tint(.red)
-                .padding()
-                
-                Spacer()
             }
             .navigationTitle("Profile")
         }
+        .onAppear {
+            viewModel.fetchUser()
+        }
+    }
+    
+    @ViewBuilder
+    func profile(user: User) -> some View {
+        HStack {
+            Text("Name: ")
+                .bold()
+            Text(user.name)
+        }
+        .padding()
+        
+        HStack {
+            Text("Email: ")
+                .bold()
+            Text(user.email)
+        }
+        .padding()
+        
+        HStack {
+            Text("Member since: ")
+                .bold()
+            Text("\(Date(timeIntervalSince1970: user.joined).formatted(date: .abbreviated, time: .shortened))")
+        }
+        .padding()
     }
 }
 
