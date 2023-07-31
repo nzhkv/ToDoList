@@ -30,11 +30,14 @@ struct ProfileView: View {
                     }
                     
                     // sign out
-                    Button("Log Out") {
-                        viewModel.logOut()
+                    GeometryReader { geometry in
+                        Button("Log Out") {
+                            viewModel.logOut()
+                        }
+                        .tint(.red)
+                        .position(x: geometry.size.width / 2)
+                        .padding()
                     }
-                    .tint(.red)
-                    .padding()
                     
                     Spacer()
                     }
