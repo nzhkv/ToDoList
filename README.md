@@ -1,7 +1,7 @@
 # ToDoList (SwiftUI)
 
 • SwiftUI<br>
-• Authentication and Firebase Database<br>
+• Firebase: Authentication and Database<br>
 • Application Architecture Development<br>
 • 5 Screens<br>
 • Functionality: Authentication, Registration, View Tasks, Create Tasks, Profile, and Log Out<br>
